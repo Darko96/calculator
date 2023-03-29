@@ -227,6 +227,7 @@ input:checked {
   width: 10.1rem;
   color: var(--very-dark-grayish-blue);
   font-size: 4rem;
+  font-weight: 700;
   line-height: 3.7rem;
   padding: 1.3rem 1.3rem 1.1rem 1.3rem;
   border-radius: 1rem;
