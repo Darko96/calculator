@@ -81,7 +81,7 @@ function calculatorOperation() {
     default:
       return;
   }
-  currOperand = result;
+  currOperand = result.toFixed(2);
   operation = undefined;
   prevOperand = "";
   previousOperand.innerHTML = "";
