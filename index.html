@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="img/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <main>
+      <section class="calculator">
+        <div class="container">
+          <!-- start - header -->
+          <div class="header">
+            <h1 class="heading">calc</h1>
+            <div class="themes-box">
+              <p>theme</p>
+              <div class="themes-btns">
+                <div class="labels">
+                  <label for="theme1">1</label>
+                  <label for="theme2">2</label>
+                  <label for="theme3">3</label>
+                </div>
+                <div class="theme-inputs">
+                  <input id="theme1" type="radio" name="theme" checked />
+                  <input id="theme2" type="radio" name="theme" />
+                  <input id="theme3" type="radio" name="theme" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end - header -->
+          <!-- start - user input -->
+          <div class="user-input">
+            <div class="previous-operand"></div>
+            <div class="current-operand"></div>
+          </div>
+          <!-- end - user input -->
+          <!-- start - calculator buttons -->
+          <div class="calculator-btns">
+            <div class="row">
+              <button class="num-btn" type="button">7</button>
+              <button class="num-btn" type="button">8</button>
+              <button class="num-btn" type="button">9</button>
+              <button class="delete-btn" type="button">del</button>
+            </div>
+            <div class="row">
+              <button class="num-btn" type="button">4</button>
+              <button class="num-btn" type="button">5</button>
+              <button class="num-btn" type="button">6</button>
+              <button class="operator-btn" type="button">+</button>
+            </div>
+            <div class="row">
+              <button class="num-btn" type="button">1</button>
+              <button class="num-btn" type="button">2</button>
+              <button class="num-btn" type="button">3</button>
+              <button class="operator-btn" type="button">-</button>
+            </div>
+            <div class="row">
+              <button class="num-btn" type="button">.</button>
+              <button class="num-btn" type="button">0</button>
+              <button class="operator-btn" type="button">/</button>
+              <button class="operator-btn" type="button">x</button>
+            </div>
+            <div class="row">
+              <button class="reset-btn" type="button">reset</button>
+              <button class="output-btn" type="button">=</button>
+            </div>
+          </div>
+          <!-- end - calculator buttons -->
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

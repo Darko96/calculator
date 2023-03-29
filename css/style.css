@@ -1,0 +1,383 @@
+:root {
+  /* background */
+  --very-dark-desaturated-blue-main-background: hsl(222, 26%, 31%);
+  --very-dark-desaturated-blue-toggle-background: hsl(223, 31%, 20%);
+  --very-dark-desaturated-blue-screen-background: hsl(224, 36%, 15%);
+  --screen-bg-color: hsl(224, 36%, 15%);
+  /* keys */
+  --desaturated-dark-blue-key-background: hsl(225, 21%, 49%);
+  --desaturated-dark-blue-key-shadow: hsl(224, 28%, 35%);
+  --red-key-background: hsl(6, 63%, 50%);
+  --dark-red-key-shadow: hsl(6, 70%, 34%);
+  --light-grayish-orange-key-background: hsl(30, 25%, 89%);
+  --grayish-orange-key-shadow: hsl(28, 16%, 65%);
+  /* text */
+  --very-dark-grayish-blue: hsl(221, 14%, 31%);
+  --white: hsl(0, 0%, 100%);
+  --theme-text-color: hsl(0, 0%, 100%);
+}
+
+/* Colors for second theme */
+.theme2 {
+  /* background */
+  --very-dark-desaturated-blue-main-background: hsl(0, 0%, 90%);
+  --very-dark-desaturated-blue-toggle-background: hsl(0, 5%, 81%);
+  --very-dark-desaturated-blue-screen-background: hsl(0, 0%, 93%);
+  --screen-bg-color: hsl(0, 5%, 81%);
+  /* keys */
+  --desaturated-dark-blue-key-background: hsl(185, 42%, 37%);
+  --desaturated-dark-blue-key-shadow: hsl(185, 58%, 25%);
+  --red-key-background: hsl(25, 98%, 40%);
+  --dark-red-key-shadow: hsl(25, 99%, 27%);
+  --light-grayish-orange-key-background: hsl(45, 7%, 89%);
+  --grayish-orange-key-shadow: hsl(34, 11%, 61%);
+  /* text */
+  --very-dark-grayish-blue: hsl(60, 10%, 19%);
+  --white: hsl(0, 0%, 100%);
+  --theme-text-color: hsl(60, 10%, 19%);
+}
+
+/* Colors for third theme */
+.theme3 {
+  /* background */
+  --very-dark-desaturated-blue-main-background: hsl(268, 75%, 9%);
+  --very-dark-desaturated-blue-toggle-background: hsl(268, 71%, 12%);
+  --very-dark-desaturated-blue-screen-background: hsl(268, 71%, 12%);
+  --screen-bg-color: hsl(268, 71%, 12%);
+  /* keys */
+  --desaturated-dark-blue-key-background: hsl(281, 89%, 26%);
+  --desaturated-dark-blue-key-shadow: hsl(285, 91%, 52%);
+  --red-key-background: hsl(176, 100%, 44%);
+  --dark-red-key-shadow: hsl(177, 92%, 70%);
+  --light-grayish-orange-key-background: hsl(268, 47%, 21%);
+  --grayish-orange-key-shadow: hsl(290, 70%, 36%);
+  /* text */
+  --very-dark-grayish-blue: hsl(52, 100%, 62%);
+  --very-dark-blue: hsl(198, 20%, 13%);
+  --white: hsl(0, 0%, 100%);
+  --theme-text-color: hsl(52, 100%, 62%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  background-color: var(--very-dark-desaturated-blue-main-background);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 54rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+.themes-box {
+  color: var(--theme-text-color);
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2.6rem;
+}
+
+.themes-box p {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  padding-bottom: 0.7rem;
+}
+
+.theme-btns {
+  height: 2.6rem;
+  width: 7.1rem;
+  border-radius: 3rem;
+  background-color: var(--very-dark-desaturated-blue-toggle-background);
+}
+
+.theme-inputs {
+  padding: 0 0.5rem;
+}
+
+.theme-inputs input {
+  appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 3rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#theme1 {
+  left: 1rem;
+}
+
+#theme2 {
+  left: 3rem;
+}
+
+#theme3 {
+  left: 5rem;
+}
+
+input:checked {
+  background-color: var(--red-key-background);
+}
+
+.labels {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.labels label {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.1rem;
+}
+
+.theme-inputs {
+  background-color: var(--very-dark-desaturated-blue-toggle-background);
+  border-radius: 1.3rem;
+}
+
+.heading {
+  color: var(--theme-text-color);
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 2.9rem;
+  align-self: flex-end;
+}
+
+.user-input {
+  height: 12.8rem;
+  width: 100%;
+  background-color: var(--very-dark-desaturated-blue-screen-background);
+  margin-bottom: 2.4rem;
+  border-radius: 1rem;
+
+  color: var(--theme-text-color);
+  text-align: right;
+}
+
+.current-operand {
+  font-weight: 700;
+  font-size: 5.6rem;
+  line-height: 5.2rem;
+  padding: 2rem 3.2rem 0 0;
+  overflow: hidden;
+}
+
+.previous-operand {
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 3.2rem;
+  padding: 2rem 3.2rem 0 0;
+  overflow: hidden;
+}
+
+.show-result {
+  padding: 4rem 3.2rem 0 0;
+}
+
+.calculator-btns {
+  background-color: var(--screen-bg-color);
+  padding: 3.2rem 3rem;
+  border-radius: 1rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  margin-bottom: 2.4rem;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.num-btn,
+.operator-btn {
+  width: 10.1rem;
+  color: var(--very-dark-grayish-blue);
+  font-size: 4rem;
+  line-height: 3.7rem;
+  padding: 1.3rem 1.3rem 1.1rem 1.3rem;
+  border-radius: 1rem;
+  box-shadow: inset 0px -4px 0px var(--grayish-orange-key-shadow);
+  border: none;
+  background-color: var(--light-grayish-orange-key-background);
+}
+
+.num-btn:active,
+.operator-btn:active {
+  transform: translateY(1.1rem);
+}
+
+.delete-btn {
+  height: 6.4rem;
+  width: 10.1rem;
+  background-color: var(--desaturated-dark-blue-key-background);
+  color: var(--white);
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  padding: 1.3rem 1.3rem 1.1rem 1.3rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: inset 0px -4px 0px var(--desaturated-dark-blue-key-shadow);
+}
+
+.reset-btn {
+  height: 6.4rem;
+  width: 22.7rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+  color: var(--white);
+  padding: 1.3rem 2.9rem 1.1rem 3.2rem;
+  background-color: var(--desaturated-dark-blue-key-background);
+  color: var(--white);
+  border-radius: 1rem;
+  border: none;
+  box-shadow: inset 0px -4px 0px var(--desaturated-dark-blue-key-shadow);
+}
+
+.output-btn {
+  height: 6.4rem;
+  width: 22.7rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+  color: var(--white);
+  padding: 1.3rem 2.9rem 1.1rem 3.2rem;
+  background-color: var(--red-key-background);
+  color: var(--white);
+  border-radius: 1rem;
+  border: none;
+  box-shadow: inset 0px -4px 0px var(--dark-red-key-shadow);
+}
+
+.delete-btn:active,
+.reset-btn:active,
+.output-btn:active {
+  transform: translateY(1.1rem);
+}
+
+/* For smaller devices */
+@media (max-width: 600px) {
+  .container {
+    max-width: 32.7rem;
+  }
+
+  .themes-box p {
+    padding-bottom: 0.5rem;
+  }
+
+  .labels {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .user-input {
+    height: 8.8rem;
+    width: 100%;
+  }
+
+  .previous-operand {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    padding: 1.9rem 2.4rem 0 0;
+  }
+
+  .current-operand {
+    font-size: 4rem;
+    line-height: 3.7rem;
+    padding: 1rem 2.4rem 0 0;
+  }
+
+  .calculator-btns {
+    padding: 2.4rem;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.3rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .num-btn,
+  .operator-btn {
+    width: 6rem;
+    font-size: 3.2rem;
+    line-height: 2.9rem;
+    padding: 1.3rem 1rem 1.1rem 1rem;
+  }
+
+  .num-btn:active,
+  .operator-btn:active {
+    transform: translateY(0.5rem);
+  }
+
+  .delete-btn {
+    width: 6rem;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    padding: 1.2rem 1rem 1.2rem 1rem;
+  }
+
+  .reset-btn {
+    height: 6.4rem;
+    width: 13.3rem;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    padding: 1.2rem 2.2rem 1.2rem 2.2rem;
+  }
+
+  .output-btn {
+    height: 6.4rem;
+    width: 13.3rem;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    padding: 1.2rem 2.2rem 1.2rem 2.2rem;
+  }
+
+  .delete-btn:active,
+  .reset-btn:active,
+  .output-btn:active {
+    transform: translateY(0.5rem);
+  }
+}
