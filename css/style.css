@@ -68,15 +68,23 @@ html {
   font-size: 62.5%;
 }
 
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
 body {
   font-family: "League Spartan", sans-serif;
   font-size: 3.2rem;
   font-weight: 700;
   background-color: var(--very-dark-desaturated-blue-main-background);
-}
-
-main {
-  height: 100vh;
+  text-rendering: optimizeSpeed;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -224,6 +232,7 @@ input:checked {
 
 .num-btn,
 .operator-btn {
+  height: 6.4rem;
   width: 10.1rem;
   color: var(--very-dark-grayish-blue);
   font-size: 4rem;
